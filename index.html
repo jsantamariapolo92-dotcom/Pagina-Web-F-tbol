@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leyendas del Fútbol | Messi · Cristiano · Neymar</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --card: #1a2332;
+      --accent: #e8b923;
+      --text: #e8eef5;
+      --muted: #8b9bb4;
+      --messi: #75aadb;
+      --cristiano: #c8102e;
+      --neymar: #009c3b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1.5rem 2rem;
+      background: linear-gradient(180deg, #1a2332 0%, var(--bg) 100%);
+      border-bottom: 1px solid #2a3548;
+    }
+
+    header h1 {
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 span {
+      color: var(--accent);
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.75rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #2a3548;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      object-position: top center;
+      background: #111;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      margin-bottom: 0.35rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .badge-messi {
+      background: rgba(117, 170, 219, 0.2);
+      color: var(--messi);
+    }
+
+    .badge-cristiano {
+      background: rgba(200, 16, 46, 0.2);
+      color: #ff6b81;
+    }
+
+    .badge-neymar {
+      background: rgba(0, 156, 59, 0.2);
+      color: #5ddf8a;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+      flex: 1;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .links a {
+      font-size: 0.8rem;
+      color: var(--text);
+      text-decoration: none;
+      background: #243044;
+      padding: 0.4rem 0.75rem;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+
+    .links a:hover {
+      background: #2f3f5a;
+    }
+
+    .btn {
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.7rem 1.2rem;
+      border-radius: 10px;
+      color: #0f1419;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+      transform: scale(1.02);
+    }
+
+    .btn-messi {
+      background: var(--messi);
+    }
+
+    .btn-cristiano {
+      background: #e63950;
+      color: white;
+    }
+
+    .btn-neymar {
+      background: var(--neymar);
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid #2a3548;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Leyendas del <span>Fútbol</span></h1>
+    <p>Tres de los mejores jugadores de la historia. Explora su trayectoria, premios y momentos clave.</p>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+
+      <!-- MESSI -->
+      <article class="card">
+        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Messi_vs_Nigeria_2018.jpg"
+          alt="Lionel Messi">
+        <div class="card-body">
+          <h2>Lionel Messi <span class="badge badge-messi">Argentina</span></h2>
+          <p>Nacido en Rosario (1987). Considerado por muchos el mejor de todos los tiempos. 8 Balones de Oro, campeón
+            del mundo 2022 y leyenda eterna del Barcelona e Inter Miami.</p>
+          <div class="links">
+            <a href="https://www.transfermarkt.es/lionel-messi/profil/spieler/28003" target="_blank"
+              rel="noopener">Transfermarkt</a>
+            <a href="https://www.youtube.com/results?search_query=messi+mejores+goles" target="_blank"
+              rel="noopener">Mejores goles</a>
+            <a href="https://www.marca.com/futbol/messi.html" target="_blank" rel="noopener">Noticias</a>
+          </div>
+          <a class="btn btn-messi" href="messi.html">Ver perfil completo →</a>
+        </div>
+      </article>
+
+      <!-- CRISTIANO -->
+      <article class="card">
+        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+          alt="Cristiano Ronaldo">
+        <div class="card-body">
+          <h2>Cristiano Ronaldo <span class="badge badge-cristiano">Portugal</span></h2>
+          <p>Nacido en Funchal (1985). El máximo goleador de la historia del fútbol. 5 Balones de Oro, 5 Champions y
+            leyenda en Manchester United, Real Madrid y Portugal.</p>
+          <div class="links">
+            <a href="https://www.transfermarkt.es/cristiano-ronaldo/profil/spieler/8198" target="_blank"
+              rel="noopener">Transfermarkt</a>
+            <a href="https://www.youtube.com/results?search_query=cristiano+ronaldo+mejores+goles" target="_blank"
+              rel="noopener">Mejores goles</a>
+            <a href="https://www.marca.com/futbol/cristiano-ronaldo.html" target="_blank" rel="noopener">Noticias</a>
+          </div>
+          <a class="btn btn-cristiano" href="cristiano.html">Ver perfil completo →</a>
+        </div>
+      </article>
+
+      <!-- NEYMAR -->
+      <article class="card">
+        <img class="card-img"
+          src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Neymar_Jr._with_Al_Hilal%2C_3_October_2023_-_03_%28cropped%29.jpg"
+          alt="Neymar">
+        <div class="card-body">
+          <h2>Neymar Jr <span class="badge badge-neymar">Brasil</span></h2>
+          <p>Nacido en Mogi das Cruzes (1992). Magia, regates y creatividad pura. Campeón de Champions con el Barcelona,
+            oro olímpico y máximo goleador histórico de Brasil.</p>
+          <div class="links">
+            <a href="https://www.transfermarkt.es/neymar/profil/spieler/68290" target="_blank"
+              rel="noopener">Transfermarkt</a>
+            <a href="https://www.youtube.com/results?search_query=neymar+mejores+jugadas" target="_blank"
+              rel="noopener">Mejores jugadas</a>
+            <a href="https://www.marca.com/futbol/neymar.html" target="_blank" rel="noopener">Noticias</a>
+          </div>
+          <a class="btn btn-neymar" href="neymar.html">Ver perfil completo →</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>
+    Página creada para Visual Studio Code · Datos actualizados 2026
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lionel Messi | Perfil completo</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --card: #1a2332;
+      --accent: #75aadb;
+      --text: #e8eef5;
+      --muted: #8b9bb4;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      background: var(--card);
+      border-bottom: 1px solid #2a3548;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .nav a:hover { color: var(--accent); }
+    .nav .brand { color: var(--text); font-weight: 600; }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+    }
+    .hero img {
+      width: 220px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 14px;
+      border: 3px solid var(--accent);
+    }
+    .hero-text h1 {
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      margin-bottom: 0.4rem;
+    }
+    .hero-text .subtitle {
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+    }
+    .hero-text p { color: var(--muted); max-width: 520px; }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.5rem 3.5rem;
+    }
+    section {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 1.6rem 1.8rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #2a3548;
+    }
+    section h2 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    ul { padding-left: 1.2rem; }
+    li { margin-bottom: 0.45rem; color: var(--muted); }
+    li strong { color: var(--text); }
+    .timeline { list-style: none; padding-left: 0; }
+    .timeline li {
+      position: relative;
+      padding-left: 1.4rem;
+      margin-bottom: 0.9rem;
+      border-left: 2px solid #2a3548;
+      padding-bottom: 0.3rem;
+    }
+    .timeline li::before {
+      content: '';
+      position: absolute;
+      left: -6px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .injury {
+      background: #1f1a1a;
+      border-left: 4px solid #c44;
+      padding: 0.9rem 1.1rem;
+      border-radius: 0 10px 10px 0;
+      margin-bottom: 0.8rem;
+    }
+    .injury strong { color: #ff8a8a; }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid #2a3548;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="index.html">← Leyendas del Fútbol</a>
+    <div>
+      <a href="cristiano.html">Cristiano</a> ·
+      <a href="neymar.html">Neymar</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Messi_vs_Nigeria_2018.jpg" alt="Lionel Messi">
+    <div class="hero-text">
+      <h1>Lionel Andrés Messi</h1>
+      <p class="subtitle">El GOAT · 8 Balones de Oro · Campeón del Mundo 2022</p>
+      <p>Nacido el 24 de junio de 1987 en Rosario, Argentina. Delantero zurdo, capitán de Argentina e Inter Miami. Máximo goleador histórico del Barcelona y de la selección argentina.</p>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <section>
+      <h2>🏆 Premios y títulos principales</h2>
+      <ul>
+        <li><strong>8 Balones de Oro</strong> (2009, 2010, 2011, 2012, 2015, 2019, 2021, 2023) — récord histórico</li>
+        <li><strong>Copa del Mundo FIFA</strong> 2022 (Argentina) + Balón de Oro del torneo</li>
+        <li><strong>2× Copa América</strong> (2021, 2024)</li>
+        <li><strong>Finalissima</strong> 2022</li>
+        <li><strong>Oro olímpico</strong> 2008 (Beijing)</li>
+        <li><strong>4× Champions League</strong> con Barcelona</li>
+        <li><strong>10× La Liga</strong> · 7× Copa del Rey</li>
+        <li><strong>2× Ligue 1</strong> (PSG)</li>
+        <li><strong>MLS Cup</strong> 2025 · Supporters' Shield 2024 (Inter Miami)</li>
+        <li><strong>6× Bota de Oro europea</strong></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📈 Trayectoria</h2>
+      <ul class="timeline">
+        <li><strong>1995-2000</strong> — Newell's Old Boys (categorías inferiores)</li>
+        <li><strong>2000-2004</strong> — La Masia (Barcelona). Debut profesional en 2004</li>
+        <li><strong>2004-2021</strong> — FC Barcelona. 778 partidos, 672 goles, 34 títulos oficiales. Máximo goleador histórico del club</li>
+        <li><strong>2021-2023</strong> — Paris Saint-Germain. 2 Ligue 1 y 1 Trophée des Champions</li>
+        <li><strong>2023-actualidad</strong> — Inter Miami. Líder del proyecto, MLS Cup 2025 y múltiples récords individuales</li>
+        <li><strong>Selección Argentina</strong> — Desde 2005. Más de 200 partidos y 120+ goles. Capitán y máximo goleador histórico</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🩹 Lesiones más duras</h2>
+      <div class="injury">
+        <strong>Fractura del quinto metatarsiano (2006-07)</strong><br>
+        87-88 días de baja. Se perdió 19 partidos. Una de las lesiones más largas de su carrera, ocurrida con solo 19 años.
+      </div>
+      <div class="injury">
+        <strong>Rotura del ligamento interno de rodilla (2015-16)</strong><br>
+        ~51-52 días fuera. Se perdió 13 partidos. Temporada complicada por problemas físicos.
+      </div>
+      <div class="injury">
+        <strong>Lesión de ligamentos en el tobillo (Copa América 2024)</strong><br>
+        59 días de baja tras la final ante Colombia. Abandonó el campo entre lágrimas. Se perdió 10 partidos.
+      </div>
+      <p style="color:var(--muted);font-size:0.9rem;margin-top:0.8rem;">A lo largo de su carrera ha sufrido principalmente problemas musculares (bíceps femoral), aunque ha mantenido una disponibilidad excepcional comparada con otros jugadores de élite.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <a href="index.html" style="color:var(--accent);text-decoration:none;">← Volver al inicio</a>
+  </footer>
+</body>
+</html>
